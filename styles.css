@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-area {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    color: white;
+    z-index: 1; /* Place the navbar in front of the image */
+}
+
+/* Rest of the CSS for .navbar-logo, .navbar-menu, .navbar-item, and .get-access-button remains the same */
+.navbar-logo img {
+    width: auto;
+    height: 50px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Allow menu to grow and take up remaining space */
+    justify-content: center; /* Center menu items */
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.get-access-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.get-access-button1:hover {
+    color: white;
+    background-color: black;
+}
+/* Your existing styles */
+
+.get-access-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto; /* Push the button to the right corner */
+}
+.get-access-button1 {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto; /* Push the button to the right corner */
+}
+/* Your existing styles */
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align the items to the top */
+    background-image: url('https://img.freepik.com/free-photo/rough-plaster-wall_1194-7175.jpg?w=826&t=st=1691520706~exp=1691521306~hmac=83d00af7e61a67cd0f57b2a2691a95b6f30467a25ab9f8cf32cd892924e056e1');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.left-feature, .right-feature {
+    flex: 1;
+}
+
+.left-feature h2, .right-feature h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.left-feature p, .right-feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    padding: 20px;
+}
+.right-feature {
+    text-align: right; /* Right-align the text */
+}
+.left-feature {
+    text-align: left; /* Right-align the text */
+}
+/* Your existing styles */
+
+.section-header {
+    text-align: left;
+}
+
+.how-it-works {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-content {
+    display: flex;
+    align-items: center;
+}
+
+.work-pointers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pointer {
+    position: relative;
+}
+
+.pointer .circle {
+    width: 50px;
+    height: 50px;
+    background-color: beige;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.line {
+    width: 2px;
+    height: 100px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.work-text {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.work-text p {
+    font-size: 1rem;
+    line-height: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+/* Rest of your existing styles */
+
+.black-area img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.testimonial-section {
+    padding: 100px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.testimonial-card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust card width */
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.testimonial-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+
+.testimonial-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+.section-header{
+    text-align: center;
+    margin: 50px;
+}
+.footer {
+    background-color:black;
+    background-image: url('https://uploads-ssl.webflow.com/63d065613c2f112ae6bf6365/63f4f17d535e9b6e5fda1f2d_Superchain-3D%20Final%20Design._vsmall.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 200px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.footer-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-sublinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer-sublink {
+    font-size: 1.2rem;
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-sublink:hover {
+    color: white;
+}
